@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "flint": {
+      "type": "http",
+      "url": "https://flint-839963098585.us-east1.run.app/mcp",
+      "oauth_resource": "https://flint-839963098585.us-east1.run.app/mcp"
+    }
+  }
+}
