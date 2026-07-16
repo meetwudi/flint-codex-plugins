@@ -1,0 +1,20 @@
+{
+  "name": "flint-codex",
+  "interface": {
+    "displayName": "Flint for Codex"
+  },
+  "plugins": [
+    {
+      "name": "flint-codex",
+      "source": {
+        "source": "local",
+        "path": "./plugins/flint-codex"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
