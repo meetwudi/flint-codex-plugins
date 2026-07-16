@@ -22,7 +22,9 @@ repository owns the installable Codex wrapper.
 
 5. Test installation from the marketplace and complete OAuth.
 6. In a new Codex task, call `flint_intro` and verify the reported Flint project
-   Library.
+   Library. Ask Codex to run a governed Routine and verify that Codex acts as
+   the external execution host rather than refusing because Flint has no generic
+   Routine runner or host-only handoff.
 7. Commit and push the release to `main`.
 
 Consumers receive the release after refreshing the `flint-codex` marketplace

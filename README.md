@@ -1,6 +1,6 @@
-# Flint for Codex
+# Flint
 
-Flint for Codex is the public Codex plugin marketplace for Flint. The plugin
+Flint is the public Codex plugin marketplace for Flint. The plugin
 connects Codex to the production Flint MCP server through OAuth and adds a thin
 skill that helps Codex begin governed knowledge discovery.
 
@@ -28,8 +28,12 @@ codex mcp login flint
 In a new Codex task, ask:
 
 ```text
-Use Flint for Codex. Call flint_intro and tell me which project Library it reports.
+Use Flint. Call flint_intro and tell me which project Library it reports.
 ```
+
+To verify the Routine boundary, ask Codex to run a governed Routine. Codex
+should discover and follow the Routine itself; it should not wait for or claim
+that Flint needs to expose a generic Routine runner.
 
 The production Flint MCP endpoint is:
 

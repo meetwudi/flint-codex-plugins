@@ -1,6 +1,6 @@
 {
   "name": "flint-codex",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Connect Codex to Flint governed knowledge through the production Flint MCP server.",
   "author": {
     "name": "Flint",
@@ -11,15 +11,15 @@
   "keywords": ["codex", "flint", "mcp", "knowledge"],
   "skills": "./skills/",
   "interface": {
-    "displayName": "Flint for Codex",
+    "displayName": "Flint",
     "shortDescription": "Use governed Flint knowledge from Codex.",
-    "longDescription": "Flint for Codex connects Codex to the production Flint MCP server and teaches Codex how to begin governed knowledge discovery.",
+    "longDescription": "Flint connects Codex to the production Flint MCP server and teaches Codex how to discover governed knowledge and execute governed Routines as the external execution host.",
     "developerName": "Flint",
     "category": "Productivity",
     "capabilities": ["Read", "Write"],
     "defaultPrompt": [
       "Show me the Flint Libraries I can access.",
-      "Use Flint to find the governed knowledge for this task.",
+      "Run the governed Flint Routine for this task.",
       "Propose a governed update through Flint."
     ]
   },

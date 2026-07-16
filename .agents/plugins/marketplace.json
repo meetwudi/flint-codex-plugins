@@ -1,7 +1,7 @@
 {
   "name": "flint-codex",
   "interface": {
-    "displayName": "Flint for Codex"
+    "displayName": "Flint"
   },
   "plugins": [
     {
