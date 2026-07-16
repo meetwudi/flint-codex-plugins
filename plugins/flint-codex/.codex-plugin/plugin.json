@@ -1,0 +1,27 @@
+{
+  "name": "flint-codex",
+  "version": "0.1.0",
+  "description": "Connect Codex to Flint governed knowledge through the production Flint MCP server.",
+  "author": {
+    "name": "Flint",
+    "url": "https://github.com/meetwudi/flint-codex-plugins"
+  },
+  "homepage": "https://github.com/meetwudi/flint-codex-plugins#readme",
+  "repository": "https://github.com/meetwudi/flint-codex-plugins",
+  "keywords": ["codex", "flint", "mcp", "knowledge"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Flint for Codex",
+    "shortDescription": "Use governed Flint knowledge from Codex.",
+    "longDescription": "Flint for Codex connects Codex to the production Flint MCP server and teaches Codex how to begin governed knowledge discovery.",
+    "developerName": "Flint",
+    "category": "Productivity",
+    "capabilities": ["Read", "Write"],
+    "defaultPrompt": [
+      "Show me the Flint Libraries I can access.",
+      "Use Flint to find the governed knowledge for this task.",
+      "Propose a governed update through Flint."
+    ]
+  },
+  "mcpServers": "./.mcp.json"
+}
