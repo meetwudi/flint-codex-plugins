@@ -1,8 +1,9 @@
 # Flint
 
-Flint is the public Codex plugin marketplace for Flint. The plugin
-connects Codex to the production Flint MCP server through OAuth and adds a thin
-skill that helps Codex begin governed knowledge discovery.
+Flint is the public Codex plugin marketplace for Flint, a governed enterprise
+and organizational knowledge system. The plugin connects Codex to the
+production Flint MCP server through OAuth and adds a thin skill for discovering,
+using, and curating shared knowledge.
 
 ## Install
 
@@ -45,6 +46,17 @@ The endpoint, OAuth flow, server instructions, tool schemas, organization
 scope, and governed knowledge remain owned by Flint production. This repository
 contains only the Codex distribution wrapper; it contains no Flint credentials
 or customer knowledge.
+
+## Curation while you work
+
+Codex treats Flint's curation advertisements as quiet, request-local signals.
+It considers whether the current work produced durable, novel knowledge for an
+advertised destination, ignores non-matches without interrupting the user, and
+uses Flint's governed curation flow when something qualifies. Depending on the
+actor's authority and the user's intent, that can be a direct application or a
+reviewable proposal. Codex asks only when approval, ambiguity, sensitivity, or
+its own guardrails require it, so curation supports the work instead of becoming
+the work.
 
 ## Update an installed plugin
 

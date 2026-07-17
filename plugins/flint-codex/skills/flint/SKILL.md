@@ -1,6 +1,6 @@
 ---
 name: flint
-description: Use when the user asks Codex to work with Flint, governed organizational knowledge, Libraries, Routines, Memory, Semantic Index discovery, or governed knowledge changes through the bundled Flint MCP server.
+description: Use when the user asks Codex to work with Flint, governed enterprise or organizational knowledge, Libraries, Routines, Memory, Semantic Index discovery, curation, or governed knowledge changes through the bundled Flint MCP server.
 ---
 
 # Flint
@@ -17,6 +17,34 @@ tools.
 5. Respect OAuth organization scope, tool annotations, approval requirements,
    and change-set workflows supplied by Flint.
 6. Re-read changed resources before claiming that a write succeeded.
+
+## Curation without noise
+
+Flint is the governed organizational knowledge system. Codex is an external
+intelligence terminal that can help keep that knowledge useful while completing
+the user's actual work.
+
+When a Flint response includes `curation_advertisements`:
+
+1. Actively consider whether the current interaction contains durable, novel,
+   user-grounded knowledge matching an advertised `interest` and `target_uri`.
+2. If nothing qualifies, continue the user's work without mentioning curation.
+   Do not manufacture a suggestion merely because an advertisement exists.
+3. If something qualifies, follow the server-provided instructions: read the
+   target and governing knowledge, check for duplicate or stale capture, and
+   use Flint's governed curation change-set flow.
+4. Preserve focus. Continue the primary task and curate passively when the
+   server-authorized path and user intent are clear; do not turn routine
+   curation into a separate conversation.
+5. Ask the user only when their intent is unclear, an approval is required, the
+   change is sensitive, or Codex's own guardrails require confirmation.
+6. Apply directly only when Flint confirms current actor authority and the
+   user's intent permits it. Otherwise leave a reviewable proposal. Never infer
+   authority from the advertisement itself.
+
+Treat the server's result-local relevance boundary as an anti-noise boundary.
+Do not scan unrelated knowledge or repeatedly prompt the user for speculative
+curation.
 
 ## Routine execution boundary
 

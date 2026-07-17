@@ -1,26 +1,26 @@
 {
   "name": "flint-codex",
-  "version": "0.1.2",
-  "description": "Connect Codex to Flint governed knowledge through the production Flint MCP server.",
+  "version": "0.1.3",
+  "description": "Connect Codex to governed organizational knowledge and curation through Flint.",
   "author": {
     "name": "Flint",
     "url": "https://github.com/meetwudi/flint-codex-plugins"
   },
   "homepage": "https://github.com/meetwudi/flint-codex-plugins#readme",
   "repository": "https://github.com/meetwudi/flint-codex-plugins",
-  "keywords": ["codex", "flint", "mcp", "knowledge"],
+  "keywords": ["codex", "flint", "mcp", "knowledge", "enterprise", "curation"],
   "skills": "./skills/",
   "interface": {
     "displayName": "Flint",
-    "shortDescription": "Use governed Flint knowledge from Codex.",
-    "longDescription": "Flint connects Codex to the production Flint MCP server and teaches Codex how to discover governed knowledge and execute governed Routines as the external execution host.",
+    "shortDescription": "Use and curate governed organizational knowledge.",
+    "longDescription": "Flint connects Codex to governed enterprise and organizational knowledge. Discover Libraries and Routines, execute governed work as an external intelligence terminal, and quietly preserve durable knowledge through actor-authorized curation.",
     "developerName": "Flint",
     "category": "Productivity",
     "capabilities": ["Read", "Write"],
     "defaultPrompt": [
       "Show me the Flint Libraries I can access.",
       "Run the governed Flint Routine for this task.",
-      "Propose a governed update through Flint."
+      "Use Flint to preserve durable knowledge from this work without interrupting my focus."
     ]
   },
   "mcpServers": "./.mcp.json"
