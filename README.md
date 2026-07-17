@@ -38,7 +38,7 @@ that Flint needs to expose a generic Routine runner.
 The production Flint MCP endpoint is:
 
 ```text
-https://flint-839963098585.us-east1.run.app/mcp
+https://flint.craftgarden.io/mcp
 ```
 
 The endpoint, OAuth flow, server instructions, tool schemas, organization

@@ -1,6 +1,6 @@
 {
   "name": "flint-codex",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Connect Codex to Flint governed knowledge through the production Flint MCP server.",
   "author": {
     "name": "Flint",
