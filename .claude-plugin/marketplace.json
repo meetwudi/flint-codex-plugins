@@ -1,0 +1,14 @@
+{
+  "name": "flint",
+  "owner": {
+    "name": "Flint"
+  },
+  "plugins": [
+    {
+      "name": "flint-claude",
+      "source": "./plugins/flint-claude",
+      "description": "Connect Claude Code to governed organizational knowledge and curation through Flint.",
+      "category": "productivity"
+    }
+  ]
+}

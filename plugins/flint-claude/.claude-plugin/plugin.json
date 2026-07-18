@@ -1,0 +1,12 @@
+{
+  "name": "flint-claude",
+  "version": "0.1.0",
+  "description": "Connect Claude Code to governed organizational knowledge and curation through Flint.",
+  "author": {
+    "name": "Flint",
+    "url": "https://github.com/meetwudi/flint-codex-plugins"
+  },
+  "homepage": "https://github.com/meetwudi/flint-codex-plugins#readme",
+  "repository": "https://github.com/meetwudi/flint-codex-plugins",
+  "keywords": ["claude-code", "flint", "mcp", "knowledge", "enterprise", "curation"]
+}
