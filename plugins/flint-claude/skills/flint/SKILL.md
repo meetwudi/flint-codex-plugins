@@ -18,6 +18,29 @@ tools.
    and change-set workflows supplied by Flint.
 6. Re-read changed resources before claiming that a write succeeded.
 
+## Bounded search targets
+
+Every `semantic_index_query` must explicitly set `content_targets`:
+
+- Use `["primitives"]` for typed graph discovery, primitive-description
+  similarity, tags, and one-hop understanding.
+- Use `["documents"]` for bounded similarity-only evidence from document
+  content in non-system Libraries. System Libraries, including conversation
+  history, are excluded. Do not claim lexical, fuzzy, tag, or full-text
+  document retrieval.
+- Use `["primitives", "documents"]` only when the task needs both independent
+  lanes, and preserve their separate limits and evidence in the answer.
+
+Use `search_weights` when retrieval priorities matter. Primitive `keyword`,
+`tag`, and `similarity`, plus document `similarity`, are independently weighted
+from 0 through 1. Weight 0 disables the method without executing it. When a
+lane object is supplied, methods omitted from that lane are disabled. Inspect
+the returned `searchPlan` to verify what ran.
+
+Do not call a direct or unbounded Librarian search tool. Narrow the corpus with
+the active actor and organization scope, semantic set, Library URI patterns,
+and explicit result and candidate limits.
+
 ## Curation without noise
 
 Flint is the governed organizational knowledge system. Claude Code is an
