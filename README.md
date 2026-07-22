@@ -72,6 +72,16 @@ be a direct application or a reviewable proposal. The agent asks only when
 approval, ambiguity, sensitivity, or its own guardrails require it, so curation
 supports the work instead of becoming the work.
 
+## Governed Routine artifacts
+
+When an agent executes a Routine, canonical durable outputs stay in Flint under
+the Routine's declared write Libraries and Memory layout. Agent hosts must not
+create local automation-side report artifacts, modify automation configuration,
+or treat scheduler files or email as the source of truth. Host-required
+bookkeeping is noncanonical transport state. If governed persistence is required
+but unavailable, the agent reports the gap instead of silently using a local
+file fallback.
+
 ## Update an installed plugin
 
 Publishing a new plugin version makes it available to downstream users, but it

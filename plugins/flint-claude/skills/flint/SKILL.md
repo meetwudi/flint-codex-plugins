@@ -84,6 +84,24 @@ Routine:
    or unauthorized, stop and report that step and reason.
 5. Do not claim completion without the Routine's required evidence.
 
+## Governed artifact boundary
+
+When executing a governed Routine, keep its canonical durable artifacts in
+Flint through the Routine's declared write Libraries and the target Library's
+Memory layout.
+
+- Persist profiles, reports, histories, reusable findings, and other durable
+  Routine outputs through governed Librarian changes when the Routine permits
+  them.
+- Do not create local report files beside an automation, modify automation
+  configuration, or treat scheduler-side files as canonical Routine output.
+- Treat host-required execution bookkeeping as minimal, noncanonical transport
+  state. It must never substitute for governed Flint persistence.
+- Treat email and other delivery channels as distribution, not as the source of
+  truth for a Routine artifact.
+- If a required governed artifact destination or write capability is missing,
+  stop and report the exact gap. Do not silently fall back to a local file.
+
 If the Flint tools are unavailable, tell the user that the plugin must be
 installed and authenticated (`/plugin` to install, `/mcp` to authenticate) and
 that a new Claude Code session may be needed. Do not silently fall back to
